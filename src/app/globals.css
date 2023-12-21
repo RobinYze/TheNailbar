@@ -1,0 +1,166 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body { 
+    height: 100%;
+    background-color: #EDE9E5;
+}
+
+@import url("https://use.typekit.net/btp4dow.css");
+
+@font-face {
+    font-family: "Kyiv";
+    src: url('../assets/fonts/KyivTypeTitling-Bold3.otf');
+}
+
+@font-face {
+    font-family: scotch-display-condensed, sans-serif;;
+    src: url("https://use.typekit.net/btp4dow.css")
+}
+
+@font-face {
+    font-family: 'Josefin';
+    src: url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&display=swap');
+} 
+
+.kyiv {
+    font-family: 'Kyiv';
+}
+
+.scotch {
+    font-family: scotch-display-condensed, sans-serif;
+}
+
+.scotch-display {
+    font-family: scotch-display, sans-serif;
+}
+
+.josefin {
+    font-family: "Josefin", sans-serif
+}
+
+.text-green {
+    color: #46645C
+}
+
+.bg-green {
+    background-color: #46645C;
+}
+
+/* Scotch Display Roman font-family: "scotch-display",
+sans-serif;
+font-weight: 400;
+font-style: normal;
+Scotch Display Italic font-family: "scotch-display",
+sans-serif;
+font-weight: 400;
+font-style: normal;
+Scotch Display Bold font-family: "scotch-display",
+sans-serif;
+font-weight: 700;
+font-style: normal;
+Scotch Display Bold Italic font-family: "scotch-display",
+sans-serif;
+font-weight: 700;
+font-style: italic;
+Scotch Display Comp Dingbats font-family: "scotch-display-comp-dingbats",
+sans-serif;
+font-weight: 400;
+font-style: normal;
+Scotch Display Cond Dingbats font-family: "scotch-display-cond-dingbats",
+sans-serif;
+font-weight: 400;
+font-style: normal;
+Scotch Display Dingbats font-family: "scotch-display-dingbats",
+sans-serif;
+font-weight: 400;
+font-style: normal;
+Scotch Display Compressed Roman font-family: "scotch-display-compressed",
+sans-serif;
+font-weight: 400;
+font-style: normal;
+Scotch Display Compressed Italic font-family: "scotch-display-compressed",
+sans-serif;
+font-weight: 400;
+font-style: italic;
+Scotch Display Compressed Medium font-family: "scotch-display-compressed",
+sans-serif;
+font-weight: 500;
+font-style: normal;
+Scotch Display Compressed Medium Italic font-family: "scotch-display-compressed",
+sans-serif;
+font-weight: 500;
+font-style: italic;
+Scotch Display Compressed SemiBold font-family: "scotch-display-compressed",
+sans-serif;
+font-weight: 600;
+font-style: normal;
+Scotch Display Compressed SemiBold Italic font-family: "scotch-display-compressed",
+sans-serif;
+font-weight: 600;
+font-style: italic;
+Scotch Display Compressed Bold font-family: "scotch-display-compressed",
+sans-serif;
+font-weight: 700;
+font-style: normal;
+Scotch Display Compressed Bold Italic font-family: "scotch-display-compressed",
+sans-serif;
+font-weight: 700;
+font-style: italic;
+Scotch Display Compressed Fat font-family: "scotch-display-compressed",
+sans-serif;
+font-weight: 900;
+font-style: normal;
+Scotch Display Compressed Fat Italic font-family: "scotch-display-compressed",
+sans-serif;
+font-weight: 900;
+font-style: italic;
+Scotch Display Condensed Light font-family: "scotch-display-condensed",
+sans-serif;
+font-weight: 300;
+font-style: normal;
+Scotch Display Condensed Light Italic font-family: "scotch-display-condensed",
+sans-serif;
+font-weight: 300;
+font-style: italic;
+Scotch Display Condensed Roman font-family: "scotch-display-condensed",
+sans-serif;
+font-weight: 400;
+font-style: normal;
+Scotch Display Condensed Italic font-family: "scotch-display-condensed",
+sans-serif;
+font-weight: 400;
+font-style: italic;
+Scotch Display Condensed Medium font-family: "scotch-display-condensed",
+sans-serif;
+font-weight: 500;
+font-style: normal;
+Scotch Display Condensed Medium Italic font-family: "scotch-display-condensed",
+sans-serif;
+font-weight: 500;
+font-style: italic;
+Scotch Display Condensed SemiBold font-family: "scotch-display-condensed",
+sans-serif;
+font-weight: 600;
+font-style: normal;
+Scotch Display Condensed SemiBold Italic font-family: "scotch-display-condensed",
+sans-serif;
+font-weight: 600;
+font-style: italic;
+Scotch Display Condensed Bold font-family: "scotch-display-condensed",
+sans-serif;
+font-weight: 700;
+font-style: normal;
+Scotch Display Condensed Bold Italic font-family: "scotch-display-condensed",
+sans-serif;
+font-weight: 700;
+font-style: italic;
+Scotch Display Condensed Fat font-family: "scotch-display-condensed",
+sans-serif;
+font-weight: 900;
+font-style: normal;
+Scotch Display Condensed Fat Italic font-family: "scotch-display-condensed",
+sans-serif;
+font-weight: 900;
+font-style: italic; */
