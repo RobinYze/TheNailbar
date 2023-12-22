@@ -37,7 +37,7 @@ const Page = () => {
                 <p className='uppercase font-medium'>Studio in Antwerp</p>
             </div>
             <div className='flex items-center sm:justify-center'>
-                <p className='text-emerald-900 uppercase kyiv sm:text-center leading-none text-lg'>The<br></br>NailBar</p>
+                <Link href="/"><p className='text-emerald-900 uppercase kyiv sm:text-center leading-none text-lg'>The<br></br>NailBar</p></Link>
             </div>
             <div className='flex items-center justify-end gap-4'>
                 <Link href="https://www.instagram.com/nailbar_antwerp/" target="_blank" className='uppercase border-b border-black leading-relaxed'>Instagram</Link>
@@ -45,7 +45,7 @@ const Page = () => {
         </div>
     </div>
 
-    <div className='hidden min-h-fit sm:grid grid-rows-3'>
+    <div className='hidden min-h-fit md:grid grid-rows-3'>
         <div className='flex justify-start'><h1 className="scotch text-[50vw] sm:text-[22vw] leading-none from-emerald-800 to-emerald-950 bg-clip-text text-transparent bg-gradient-to-br">Th<span className='italic'>e</span></h1></div>
         <div className='-translate-y-10 md:-translate-y-20 mx-auto w-fit relative'>
             <div className='hidden md:block absolute right-0 top-0 translate-x-full -translate-y-1/2 w-[200px] h-[300px] bg-emerald-900/70 shadow-lg'>
@@ -60,17 +60,23 @@ const Page = () => {
             </div>
         <h1 className="scotch italic text-[50vw] sm:text-[22vw] leading-none from-emerald-900 to-emerald-950 bg-clip-text text-transparent bg-gradient-to-br">Nail</h1>
         </div>
-        <div className='-translate-y-20 md:-translate-y-40 flex justify-end'><h1 className="scotch text-[50vw] sm:text-[22vw] leading-none from-emerald-900 to-[#011a14] bg-clip-text text-transparent bg-gradient-to-br">B<span className='italic'>a</span>r</h1></div>
+        <div className='-translate-y-20 md:-translate-y-40 flex justify-end relative'>
+            <h1 className="scotch text-[50vw] sm:text-[22vw] leading-none from-emerald-900 to-[#011a14] bg-clip-text text-transparent bg-gradient-to-br">B<span className='italic'>a</span>r</h1>
         
-        <div className='hidden sm:block absolute left-20 bottom-0 -translate-y-full'>
-            <button className='group uppercase border border-black rounded-full px-10 py-6 relative w-[200px] h-[200px] leading-none hover:leading-normal hover:bg-black hover:text-white duration-300 outline-offset-0 hover:outline-offset-8 outline outline-transparent hover:outline-black'>
-                <MoveRight className='absolute left-0 top-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 group-hover:translate-x-4 group-hover:opacity-0 duration-500' strokeWidth={1}/>
-                Maak een afspraak
-            </button>
+                <div className='hidden sm:block row-start-2 absolute left-10 top-1/2 -translate-y-1/2'>
+                    <Link href="/afspraak">
+                    <button className='group uppercase border border-black rounded-full px-10 py-6 relative w-[200px] h-[200px] leading-none hover:leading-normal hover:bg-black hover:text-white duration-300 outline-offset-0 hover:outline-offset-8 outline outline-transparent hover:outline-black'>
+                        <MoveRight className='absolute left-0 top-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 group-hover:translate-x-4 group-hover:opacity-0 duration-500' strokeWidth={1} />
+                        Maak een afspraak
+                    </button>
+                    </Link>
+            </div>
         </div>
+        
+       
     </div>
 
-    <div className='sm:hidden min-h-[100dvh] mb-20 flex flex-col items-center gap-4'>
+    <div className='md:hidden min-h-[100dvh] mb-20 flex flex-col items-center gap-4'>
         <p className='text-green-950 text-9xl scotch-display text-center'>Th<span className='italic'>e</span><br></br>N<span className='italic'>ai</span>l</p>
         <div className='w-full flex justify-center relative'>
             <div className='h-[230px]'></div>
@@ -337,20 +343,20 @@ const Page = () => {
             <p className='mt-10 max-w-xl text-center mx-auto'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio repellat non doloribus molestiae reiciendis nobis modi ducimus iure quae doloremque optio temporibus impedit beatae dicta ab perspiciatis, nesciunt, aut accusantium?</p>
             
             <div className='flex justify-center mt-10'>
-                <button className='group uppercase border border-black rounded-full px-10 py-6 relative w-[200px] h-[200px] leading-none hover:leading-normal hover:bg-black hover:text-white duration-300 outline-offset-0 hover:outline-offset-8 outline outline-transparent hover:outline-black'>
+                <Link href="/afspraak"><button className='group uppercase border border-black rounded-full px-10 py-6 relative w-[200px] h-[200px] leading-none hover:leading-normal hover:bg-black hover:text-white duration-300 outline-offset-0 hover:outline-offset-8 outline outline-transparent hover:outline-black'>
                     <MoveRight className='absolute left-0 top-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 group-hover:translate-x-4 group-hover:opacity-0 duration-500' strokeWidth={1} />
                     Maak een afspraak
-                </button>
+                </button></Link>
             </div>
         </div>
         </Fade >
     </div>
 
     <div className='mt-32 border-t border-black/20 py-16'>
-        <div className='container mx-auto flex justify-between items-center opacity-20 text-sm'>
+        <div className='container mx-auto grid grid-cols-3 opacity-20 text-sm'>
             <p>Copyright The Nailbbar</p>
-            <p className='underline cursor-pointer'>Afspraak maken</p>
-            <p><Heart className='w-4'/></p>
+            <div className='flex justify-center'><p className='underline cursor-pointer'>Afspraak maken</p></div>
+            <div className='flex justify-end'><Heart className='w-4' /></div>
         </div>
     </div>
     </>
